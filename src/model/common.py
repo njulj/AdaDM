@@ -71,6 +71,7 @@ class ResBlock_AdaDM(nn.Module):
         self.conv1 = conv(n_feats, n_feats, kernel_size, bias=bias)
         self.conv2 = conv(n_feats, n_feats, kernel_size, bias=bias)
         self.act = act
+        self.res_scale = res_scale
         self.phi = nn.Conv2d(1, 1, 1, 1, 0, bias=True)
         self.phi.weight.data.fill_(1)
         self.phi.bias.data.fill_(0)
@@ -83,8 +84,8 @@ class ResBlock_AdaDM(nn.Module):
         res = self.conv1(x_n)
         res = self.act(res)
         res = self.norm2(res)
-        res = self.conv2(res) * 0.1
-        res = res * (torch.exp(self.phi(torch.log(s)))) 
+        res = self.conv2(res).mul(self.res_scale)
+        res = res * torch.exp(self.phi(torch.log(s)))
 
         res += x
 
