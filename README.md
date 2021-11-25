@@ -1,5 +1,5 @@
 # AdaDM
-AdaDM: Enabling Normalization for Image Super-Resolution
+AdaDM: Enabling Normalization for Image Super-Resolution. You can apply BN, LN or GN in SR networks with our AdaDM.
 
 | Model    | Scale | File name (.pt) | Urban100 | Manga109 |
 |  ---     |  ---  | ---             | ---        | ---      |
