@@ -22,7 +22,8 @@ AdaDM: Enabling Normalization for Image Super-Resolution
 || 3 | NLSN_AdaDM_DIV2K_X3 | 29.53 | 34.95  |
 || 4 | NLSN_AdaDM_DIV2K_X4 | 27.24 | 31.73 |
 
-## Preparing
+## Preparation
+Please refer to [EDSR](https://github.com/thstkdgus35/EDSR-PyTorch) for instructions on dataset download and software installation, then clone our repository as follows:
 ```bash
 git clone https://github.com/njulj/AdaDM.git
 ```
@@ -55,3 +56,6 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python3 main.py --template EDSR_paper --scale $SCAL
 ```
 Here, `$GPU_ID` specifies the GPU id used for testing. `$SCALE` indicates the upscaling factor (e.g., 2, 3, 4). `--pre_train` specifies the path of
 saved checkpoints. `$TEST_DATASET` indicates the dataset to be tested.
+
+## Acknowledgement
+This repository is built on [EDSR](https://github.com/thstkdgus35/EDSR-PyTorch) and [NLSN](https://github.com/HarukiYqM/Non-Local-Sparse-Attention). We thank the authors for sharing their codes.
