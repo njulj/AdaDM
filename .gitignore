@@ -1,0 +1,10 @@
+# Ignore Mac system files
+.DS_store
+
+dataset/
+
+experiment/
+
+__pycache__
+
+*.swp
