@@ -28,7 +28,7 @@ Please refer to [EDSR](https://github.com/thstkdgus35/EDSR-PyTorch) for instruct
 git clone https://github.com/njulj/AdaDM.git
 ```
 
-## Train
+## Training
 ```bash
 cd AdaDM/src
 bash train.sh
@@ -43,7 +43,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python3 main.py --template EDSR_paper --scale 2\
 Here, `$GPU_ID` specifies the GPU id used for training. `EDSR_AdaDM_Test_DIV2K_X2` is the directory where all files are saved during training.
 `--dir_data` specifies the root directory for all datasets, you should place the DIV2K and benchmark (e.g., Urban100) datasets under this directory.
 
-## Test
+## Testing
 ```bash
 cd AdaDM/src
 bash test.sh
