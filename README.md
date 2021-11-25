@@ -1,23 +1,23 @@
 # AdaDM
 AdaDM: Enabling Normalization for Image Super-Resolution
 
-| Model    | Scale | File name (.pt) | Parameters | ****PSNR** |
+| Model    | Scale | File name (.pt) | Urban100 | Manga109 |
 |  ---     |  ---  | ---             | ---        | ---      |
-|**EDSR** | 2 |                     | 1.37 M | 34.61 dB |
-|| 3 || 40.7 M | 35.03 dB |
-|| 4 || 1.55 M | 30.92 dB |
-|**EDSR***| 2 | EDSR_AdaDM_DIV2K_X2 | 43.7 M | 31.26 dB |
-|| 3 | EDSR_AdaDM_DIV2K_X3 | 1.52 M | 28.95 dB |
-|| 4 | EDSR_AdaDM_DIV2K_X4 | 43.1 M | 29.25 dB |
-|**RDN**  | 2 |  | 3.23 M | 34.63 dB |
-|| 3 |  | 7.95 M| 34.92 dB |
-|| 4 |  | | 30.94 dB |
-|**RDN***| 2 | RDN_AdaDM_DIV2K_X2 | | 31.22 dB |
-|| 3 | RDN_AdaDM_DIV2K_X3 | | 28.97 dB |
-|| 4 | RDN_AdaDM_DIV2K_X4 | | 29.24 dB |
-|**NLSN**  | 2 |  | 3.23 M | 34.63 dB |
-|| 3 |  | 7.95 M| 34.92 dB |
-|| 4 |  | | 30.94 dB |
-|**NLSN*** | 3 | NLSN_AdaDM_DIV2K_X2 | | 31.22 dB |
-|| 3 | NLSN_AdaDM_DIV2K_X3 | | 28.97 dB |
-|| 4 | NLSN_AdaDM_DIV2K_X4 | | 29.24 dB |
+|**EDSR** | 2 |                     | 32.93 | 39.10 |
+|| 3 || 28.80 | 34.17 |
+|| 4 || 26.64 | 31.02 |
+|**EDSR***| 2 | EDSR_AdaDM_DIV2K_X2 | 33.12 | 39.31 |
+|| 3 | EDSR_AdaDM_DIV2K_X3 | 29.02 | 34.48 |
+|| 4 | EDSR_AdaDM_DIV2K_X4 | 26.83  | 31.24 |
+|**RDN**  | 2 |  | 32.89  | 39.18 |
+|| 3 |  | 28.80 | 34.13 |
+|| 4 |  | 26.61 | 31.00 |
+|**RDN***| 2 | RDN_AdaDM_DIV2K_X2 | 33.03 | 39.18 |
+|| 3 | RDN_AdaDM_DIV2K_X3 | 28.95 | 34.29  |
+|| 4 | RDN_AdaDM_DIV2K_X4 | 26.72 | 31.18 |
+|**NLSN**  | 2 |  | 33.42 | 39.59 |
+|| 3 |  | 29.25 | 34.57 |
+|| 4 |  | 26.96 | 31.27 |
+|**NLSN*** | 2 | NLSN_AdaDM_DIV2K_X2 | 33.59 | 39.67 |
+|| 3 | NLSN_AdaDM_DIV2K_X3 | 29.53 | 34.95  |
+|| 4 | NLSN_AdaDM_DIV2K_X4 | 27.24 | 31.73 |
