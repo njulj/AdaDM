@@ -21,3 +21,37 @@ AdaDM: Enabling Normalization for Image Super-Resolution
 |**NLSN*** | 2 | NLSN_AdaDM_DIV2K_X2 | 33.59 | 39.67 |
 || 3 | NLSN_AdaDM_DIV2K_X3 | 29.53 | 34.95  |
 || 4 | NLSN_AdaDM_DIV2K_X4 | 27.24 | 31.73 |
+
+## Preparing
+```bash
+git clone https://github.com/njulj/AdaDM.git
+```
+
+## Train
+```bash
+cd AdaDM/src
+bash train.sh
+```
+Example training command in train.sh looks like:
+```bash
+CUDA_VISIBLE_DEVICES=$GPU_ID python3 main.py --template EDSR_paper --scale 2\
+        --n_GPUs 1 --batch_size 16 --patch_size 96 --rgb_range 255 --res_scale 0.1\
+        --save EDSR_AdaDM_Test_DIV2K_X2 --dir_data ../dataset --data_test Urban100\
+        --epochs 1000 --decay 200-400-600-800 --lr 1e-4 --save_models --save_results 
+```
+Here, `$GPU_ID` specifies the GPU id used for training. `EDSR_AdaDM_Test_DIV2K_X2` is the directory where all files are saved during training.
+`--dir_data` specifies the root directory for all datasets, you should place the DIV2K and benchmark (e.g., Urban100) datasets under this directory.
+
+## Test
+```bash
+cd AdaDM/src
+bash test.sh
+```
+Example testing command in test.sh looks like:
+```bash
+CUDA_VISIBLE_DEVICES=$GPU_ID python3 main.py --template EDSR_paper --scale $SCALE\
+        --pre_train ../experiment/test/model/EDSR_AdaDM_DIV2K_X$SCALE.pt\
+        --dir_data ../dataset --n_GPUs 1 --test_only --data_test $TEST_DATASET
+```
+Here, `$GPU_ID` specifies the GPU id used for testing. `$SCALE` indicates the upscaling factor (e.g., 2, 3, 4). `--pre_train` specifies the path of
+saved checkpoints. `$TEST_DATASET` indicates the dataset to be tested.
