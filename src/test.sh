@@ -1,15 +1,15 @@
 #!/bin/bash
 
-GPU_ID=0
+GPU_ID=3
 SCALE=2
-TEST_DATASET="Set5"
+TEST_DATASET="Urban100"
 TEST_MODEL="EDSR"
 
 ######################################################################################################
 # EDSR Test
 if [[ $TEST_MODEL == "EDSR" ]]; then
     CUDA_VISIBLE_DEVICES=$GPU_ID python3 main.py --template EDSR_paper --scale $SCALE\
-        --pre_train ../experiment/test/model/EDSR_AdaDM_DIV2K_X$SCALE.pt\
+        --res_scale 0.1 --pre_train ../experiment/test/model/EDSR_AdaDM_DIV2K_X$SCALE.pt\
         --dir_data ../dataset --n_GPUs 1 --test_only --data_test $TEST_DATASET
 fi
 
