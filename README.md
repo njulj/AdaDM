@@ -19,8 +19,8 @@ AdaDM: Enabling Normalization for Image Super-Resolution. You can apply BN, LN o
 || 3 |  | 29.25 | 34.57 |
 || 4 |  | 26.96 | 31.27 |
 |**NLSN*** | 2 | [NLSN_AdaDM_DIV2K_X2](https://drive.google.com/drive/folders/1xljnGUUPAXpdAzXxCUMz5Rs2yOMAMOx6?usp=sharing) | 33.59 | 39.67 |
-|| 3 | NLSN_AdaDM_DIV2K_X3 | 29.53 | 34.95  |
-|| 4 | NLSN_AdaDM_DIV2K_X4 | 27.24 | 31.73 |
+|| 3 | [NLSN_AdaDM_DIV2K_X3](https://drive.google.com/drive/folders/1xljnGUUPAXpdAzXxCUMz5Rs2yOMAMOx6?usp=sharing) | 29.53 | 34.95  |
+|| 4 | [NLSN_AdaDM_DIV2K_X4](https://drive.google.com/drive/folders/1xljnGUUPAXpdAzXxCUMz5Rs2yOMAMOx6?usp=sharing) | 27.24 | 31.73 |
 
 ## Preparation
 Please refer to [EDSR](https://github.com/thstkdgus35/EDSR-PyTorch) for instructions on dataset download and software installation, then clone our repository as follows:
