@@ -1,11 +1,11 @@
 # AdaDM
 ## AdaDM: Enabling Normalization for Image Super-Resolution.
- You can apply BN, LN or GN in SR networks with our AdaDM. Pretrained models can be downloaded from
+ You can apply BN, LN or GN in SR networks with our AdaDM. Pretrained models (EDSR\*/RDN\*/NLSN\*) can be downloaded from
  [Google Drive](https://drive.google.com/drive/folders/1xljnGUUPAXpdAzXxCUMz5Rs2yOMAMOx6?usp=sharing) or
  [BaiduYun](https://pan.baidu.com/s/18I3j4DJFvbNvTFHzDwsssA). The password for BaiduYun is `kymj`.
 
-:loudspeaker: If you use [BasicSR](https://github.com/xinntao/BasicSR) framework, you need to turn off the Exponential Moving Average (EMA) when
-applying BN in the generator network (e.g. RRBDNet). You can disable EMA by setting `ema_decay=0` in `.yml` configuration file. 
+:loudspeaker: If you use [BasicSR](https://github.com/xinntao/BasicSR) framework, you need to turn off the Exponential Moving Average (EMA) option when
+applying BN in the generator network (e.g., RRBDNet). You can disable EMA by setting `ema_decay=0` in corresponding `.yml` configuration file. 
 
 | Model    | Scale | File name (.pt) | Urban100 | Manga109 |
 |  ---     |  ---  | ---             | ---        | ---      |
