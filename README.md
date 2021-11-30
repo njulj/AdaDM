@@ -1,5 +1,5 @@
 # AdaDM
-## AdaDM: Enabling Normalization for Image Super-Resolution.
+## [AdaDM: Enabling Normalization for Image Super-Resolution](https://arxiv.org/abs/2111.13905).
  You can apply BN, LN or GN in SR networks with our AdaDM. Pretrained models (EDSR\*/RDN\*/NLSN\*) can be downloaded from
  [Google Drive](https://drive.google.com/drive/folders/1xljnGUUPAXpdAzXxCUMz5Rs2yOMAMOx6?usp=sharing) or
  [BaiduYun](https://pan.baidu.com/s/18I3j4DJFvbNvTFHzDwsssA). The password for BaiduYun is `kymj`.
